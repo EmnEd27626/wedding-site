@@ -13,7 +13,7 @@ body {
 h1 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-top: 30vh;
 }
 
@@ -23,9 +23,8 @@ nav {
   left: 1rem;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.1em;
-  font-family: 'EB Garamond', serif;
 }
 
 nav a {
@@ -43,14 +42,24 @@ nav a:hover {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  font-family: 'EB Garamond', serif;
-  font-size: 18px;
-  line-height: 1.8;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
   letter-spacing: 0.1em;
-  color: #3c3c3c;
 }
 
-/* Responsive styling for mobile */
+.return-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #3c3c3c;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'EB Garamond', serif;
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 18px;
@@ -63,10 +72,10 @@ nav a:hover {
   }
 
   nav {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .date-top-right {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
