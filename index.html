@@ -1,121 +1,23 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>
-   Emma &amp; Edward
-  </title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
-
-body {
-  font-family: 'EB Garamond', serif;
-  background-color: #f9f8f6;
-  color: #3c3c3c;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.date-top-right {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  font-size: 26px;
-  line-height: 1.7;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
-
-nav {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 14px;
-  letter-spacing: 0.1em;
-}
-
-
-nav a {
-  display: block;
-  margin: 1rem 0;
-  color: #2f2f2f;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-}
-
-
-.page-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 600px;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
-  font-family: 'EB Garamond', serif;
-}
-
-.return-btn {
-  margin-top: 5rem;
-  font-size: 1rem;
-  color: #3c3c3c;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: 'EB Garamond', serif;
-  display: block;
-}
-
-.home-title {
-  font-size: 3.5rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #2f2f2f;
-  text-shadow:
-    1px 1px 0 #fff,
-    2px 2px 2px rgba(0, 0, 0, 0.25);
-  margin-top: 3rem;
-}
-</style></head>
+  <meta charset="UTF-8" />
+  <title>Emma & Edward</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<div class="date-top-right">
-   27
-   <br/>
-   06
-   <br/>
-   26
+  <div class="date-top-right">27<br>06<br>26</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="details.html">Details</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="contact.html">Contact</a>
+    <a href="faqs.html">FAQs</a>
+  </nav>
+  <div class="page-content">
+<h1>Emma & Edward</h1><button class='return-btn' onclick="window.location.href='details.html'">Return</button>
   </div>
-<nav>
-<a href="index.html">
-    Home
-   </a>
-<a href="details.html">
-    Details
-   </a>
-<a href="rsvp.html">
-    RSVP
-   </a>
-<a href="contact.html">
-    Contact
-   </a>
-<a href="faqs.html">
-    FAQs
-   </a>
-</nav>
-<div class="page-content">
-<h1 class="home-title">
-    Emma &amp; Edward
-   </h1>
-</div>
 </body>
 </html>

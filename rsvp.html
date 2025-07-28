@@ -1,23 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Emma & Edward</title>
+  <title>Emma & Edward – RSVP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #f9f8f6;
+      color: #2f2f2f;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .date-top-right {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      font-size: 26px;
+      line-height: 1.7;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    nav.details-nav {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+    nav.details-nav a {
+      display: block;
+      margin: 1rem 0;
+      color: #2f2f2f;
+      text-decoration: none;
+    }
+    .page-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 600px;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    .page-title {
+      font-size: 3.5rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #2f2f2f;
+      text-shadow: 1px 1px 0 #fff, 2px 2px 2px rgba(0,0,0,0.25);
+      margin-bottom: 2rem;
+    }
+    form input, form textarea, form select {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      width: 90%;
+      max-width: 400px;
+      border: 1px solid #aaa;
+      background: #fff;
+    }
+    form button {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background: none;
+      border: none;
+      color: #2f2f2f;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    form button:hover {
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
   <div class="date-top-right">27<br>06<br>26</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="details.html">Details</a>
-    <a href="rsvp.html">RSVP</a>
-    <a href="contact.html">Contact</a>
-    <a href="faqs.html">FAQs</a>
+  <nav class="details-nav">
+    <a href="#">Schedule</a>
+    <a href="#">Location</a>
+    <a href="#">Transport</a>
+    <a href="#">Dress Code</a>
+    <a href="#">Accommodation</a>
+    <a href="#">Gift</a>
+    <a href="#">Home</a>
   </nav>
   <div class="page-content">
-<h2>RSVP</h2><p>Form coming soon!</p><button class='return-btn' onclick="window.location.href='details.html'">Return</button>
+    <h2 class="page-title">RSVP</h2>
+    <form action="https://formspree.io/f/xjkowwjq" method="POST">
+      <input type="text" name="name" placeholder="Your full name" required><br>
+      <input type="email" name="email" placeholder="Your email" required><br>
+      <select name="attendance" required>
+        <option value="">Will you attend?</option>
+        <option value="Yes">Yes, absolutely!</option>
+        <option value="No">Sadly, no</option>
+      </select><br>
+      <textarea name="message" placeholder="Anything else you'd like us to know?" rows="4"></textarea><br>
+      <button type="submit">Send RSVP</button>
+    </form>
   </div>
 </body>
 </html>
