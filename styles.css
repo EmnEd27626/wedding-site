@@ -1,1 +1,50 @@
-body { font-family: 'EB Garamond', serif; }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+header {
+    text-align: right;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 2em; /* Make the date larger */
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.return-button {
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: #5a6268;
+}
