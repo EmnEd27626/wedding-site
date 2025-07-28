@@ -20,6 +20,23 @@ body {
   letter-spacing: 0.1em;
 }
 
+nav {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+nav a {
+  display: block;
+  margin: 1rem 0;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
 .page-content {
   position: absolute;
   top: 50%;
@@ -33,7 +50,7 @@ body {
 }
 
 .return-btn {
-  margin: 3rem auto 2rem;
+  margin-top: 5rem;
   font-size: 1rem;
   color: #3c3c3c;
   background: none;
