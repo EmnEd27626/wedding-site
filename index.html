@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Emma & Edward – Emma & Edward – Home</title>
+  <title>Emma & Edward</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
@@ -15,10 +14,13 @@
       margin: 0;
       padding: 0;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .date-top-right {
-      position: fixed;
+      position: absolute;
       top: 1rem;
       right: 1rem;
       font-size: 26px;
@@ -27,71 +29,59 @@
       letter-spacing: 0.1em;
     }
 
-    nav.details-nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #f9f8f6;
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
+    .main-title {
+      flex: 1;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      padding: 0.5rem 0;
-      border-top: 1px solid #ccc;
-    }
-
-    nav.details-nav a {
-      margin: 0 0.5rem;
-      color: #2f2f2f;
-      text-decoration: none;
-    }
-
-    .page-content {
-      max-width: 700px;
-      margin: 6rem auto 5rem;
-      text-align: center;
-      padding: 1rem;
-      font-size: 1rem;
-    }
-
-    .page-title {
-      font-size: 3rem;
+      align-items: center;
+      font-size: 3.5rem;
       font-weight: 600;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
       color: #2f2f2f;
       text-shadow:
         1px 1px 0 #fff,
         2px 2px 2px rgba(0, 0, 0, 0.25);
-      margin-bottom: 2rem;
+    }
+
+    nav.bottom-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1rem 0;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      border-top: 1px solid #ccc;
+    }
+
+    nav.bottom-nav a {
+      color: #2f2f2f;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .main-title {
+        font-size: 2.5rem;
+        padding: 2rem 1rem;
+      }
+      nav.bottom-nav {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="date-top-right">27<br>06<br>26</div>
-  <nav class="details-nav">
-    <a href="schedule.html">Schedule</a>
-    <a href="location.html">Location</a>
-    <a href="transport.html">Transport</a>
-    <a href="dress.html">Dress Code</a>
-    <a href="accommodation.html">Accommodation</a>
-    <a href="gift.html">Gift</a>
-    <a href="index.html">Home</a>
+  <div class="main-title">EMMA &<br>EDWARD</div>
+  <nav class="bottom-nav">
+    <a href="details.html">Details</a>
+    <a href="contact.html">Contact</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="rsvp.html">RSVP</a>
   </nav>
-
-  
-<div class="bottom-nav">
-  <a href="details.html">Details</a>
-  <a href="contact.html">Contact</a>
-  <a href="faqs.html">FAQs</a>
-  <a href="rsvp.html">RSVP</a>
-</div>
-
-  <div class="page-content">
-    <h1 class="page-title" style="font-size: 5rem;">Emma & Edward</h1>
-  </div>
 </body>
 </html>
