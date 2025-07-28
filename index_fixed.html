@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emma & Edward</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #f9f8f6;
+      color: #2f2f2f;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .date-top-right {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 26px;
+      line-height: 1.7;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    .main-title {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.5rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #2f2f2f;
+      text-shadow:
+        1px 1px 0 #fff,
+        2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    nav.bottom-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 1rem 0;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      border-top: 1px solid #ccc;
+    }
+
+    nav.bottom-nav a {
+      color: #2f2f2f;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .main-title {
+        font-size: 2.5rem;
+        padding: 2rem 1rem;
+      }
+
+      nav.bottom-nav {
+        gap: 1rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="date-top-right">27<br>06<br>26</div>
+  <div class="main-title">EMMA &<br>EDWARD</div>
+  <nav class="bottom-nav">
+    <a href="details.html">Details</a>
+    <a href="contact.html">Contact</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="rsvp.html">RSVP</a>
+  </nav>
+</body>
+</html>
